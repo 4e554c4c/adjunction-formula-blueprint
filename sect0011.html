@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blueprint for the Adjunction Formula: Kahler differentials</title>
+<link rel="next" href="sect0012.html" title="Coherent Sheaves and Stalks" />
+<link rel="prev" href="sect0010.html" title="Misc Commutative Algebra" />
+<link rel="up" href="sect0007.html" title="Adjunction Formula" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">Blueprint for the Adjunction Formula</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Commutative Algebra Preliminaries</span></a>
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
+     <li class="">
+  <a href="sect0002.html"><span class="toc_ref"></span> <span class="toc_entry">Projective Resolutions</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref"></span> <span class="toc_entry">Regular elements and sequences</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref"></span> <span class="toc_entry">Associated Primes</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref"></span> <span class="toc_entry">Auslander-Buchsbaum Formula</span></a>
+ </li>
+<li class="">
+  <a href="sect0006.html"><span class="toc_ref"></span> <span class="toc_entry">Proof of Auslander-Buchbaum-Serre</span></a>
+ </li>
+
+  </ul>
+ </li>
+<li class=" active">
+  <a href="sect0007.html"><span class="toc_ref"></span> <span class="toc_entry">Adjunction Formula</span></a>
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
+     <li class="">
+  <a href="sect0008.html"><span class="toc_ref"></span> <span class="toc_entry">Nakayama’s Lemma and Corollaries</span></a>
+ </li>
+<li class="">
+  <a href="sect0009.html"><span class="toc_ref"></span> <span class="toc_entry">Regular Varieties</span></a>
+ </li>
+<li class="">
+  <a href="sect0010.html"><span class="toc_ref"></span> <span class="toc_entry">Misc Commutative Algebra</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0011.html"><span class="toc_ref"></span> <span class="toc_entry">Kahler differentials</span></a>
+ </li>
+<li class="">
+  <a href="sect0012.html"><span class="toc_ref"></span> <span class="toc_entry">Coherent Sheaves and Stalks</span></a>
+ </li>
+<li class="">
+  <a href="sect0013.html"><span class="toc_ref"></span> <span class="toc_entry">Irreducible Schemes</span></a>
+ </li>
+<li class="">
+  <a href="sect0014.html"><span class="toc_ref"></span> <span class="toc_entry">Left-exactness of conormal bundle</span></a>
+ </li>
+<li class="">
+  <a href="sect0015.html"><span class="toc_ref"></span> <span class="toc_entry">Main Proof</span></a>
+ </li>
+
+  </ul>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h2 id="a0000000012"> Kahler differentials</h2>
+
+<p>We use the following strategy to define the Kahler differentials: first, we give the universal property, and then we give a few constructions that satisfy the universal property </p>
+<p>Let \(A\) be an \(R\)-algebra. <div class="definition_thmwrapper " id="def:derivation">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">38</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> An \(R\)-linear derivation of \(A\) into \(M\) is a map of \(R\)-modules \(d \colon A \to M\) </p>
+
+  </div>
+</div> </p>
+<p>The set of derivations is denoted \(\operatorname {Der}_{R}(A,M)\) </p>
+<p><div class="lemma_thmwrapper " id="lem:derivations_are_a_module">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">39</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> def:derivation \(\operatorname {Der}_{R}(A,M)\) is an \(R\)-module. </p>
+
+  </div>
+</div> </p>
+<p><div class="proof_wrapper" id="a0000000056">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> Derivations live in \(\operatorname {Hom}_{R} (A,M)\), so all we need to check is that Leibnitz’ rule still holds after addition, which we can do explicitly. <div class="proof_wrapper" id="a0000000057">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> </p>
+<p><div class="lemma_thmwrapper " id="lem:kahler_diff_module_representable">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">40</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> lem:derivations_are_a_module The <i class="itshape">module of Kahler differentials</i> \(\Omega _{A / R}\) is the \(A\)-module that represents the functor \(M \mapsto \operatorname {Der}_{R}(A,M)\) from \(A\)-modules to \(R\)-modules. </p>
+
+  </div>
+</div> </p>
+<p>Of course as we define by universal property via representaility, it is not clear that the module exists. </p>
+<p><div class="lemma_thmwrapper " id="lem:explicit_kahler_diff_free_quotient">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">41</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> lem:kahler_diff_module_representable </p>
+<p>The following module satisfies the universal property of \(\Omega _{R / A}\) : Take the free \(R\)-module on the symbols \(da\) for \(a \in A\), and quotient out by the relations </p>
+<ol class="enumerate">
+  <li><p>\(dr = 0\) for \(r \in R\) </p>
+</li>
+  <li><p>\(d(a + a^{\prime }) = da + da^{\prime }\) </p>
+</li>
+  <li><p>\(d(aa^{\prime }) = ada^{\prime } + a^{\prime }da\) .</p>
+</li>
+</ol>
+
+  </div>
+</div> </p>
+<p>We can state another version of the universal property: </p>
+<p><div class="lemma_thmwrapper " id="lem:kahler_diff_module_univ_prop">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">42</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> lem:kahler_diff_module_representable </p>
+<p>The module of Kahler differentials has the following universal property: The map \(d : A \to \Omega _{A / R}\) defined by \(a \mapsto da\) is initial in the category whose objects are derivations \(\delta : A \to M\) and morphisms are diagrams </p>
+<div class="displaymath" id="a0000000058">
+  \[  \begin{tikzcd} \end{tikzcd} A \arrow {r}{\delta ^{\prime }} \arrow {rd}{\delta } &  M^{\prime } \arrow {d}{} \\ &  M \end{tikzcd}  \]
+</div>
+
+  </div>
+</div> </p>
+<p>Finally, there is a second construction: <div class="lemma_thmwrapper " id="lem:explicit_kahler_diff_I_mod_ISquared">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">43</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> lem:kahler_diff_module_univ_prop </p>
+<p>Let \(I\) be the kernel of the multiplication map \(A \otimes _{R} A \to A\). Then \(I / I^{2}\) satisfies the universal property of \(\Omega _{A / R}\) </p>
+
+  </div>
+</div> </p>
+<p><div class="proof_wrapper" id="a0000000059">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> This proof (at least in Vakil) is a bit long, uses a lot of properties of pure tensors, and I’m not sure if it’s worth it. <div class="proof_wrapper" id="a0000000060">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> </p>
+<p>The following is quite important. <div class="lemma_thmwrapper " id="lem:kahler_diff_commutes_with_loczn">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">44</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> lem:kahler_diff_module_univ_prop By \(\phi \), we mean the ring map \(R \to A\) given by the algebra structure Let \(S\) a multiplicative subset of \(A\), and let \(T\) be a multiplicative subset of \(R\) with \(\phi (T) \subset S\). Assume the following diagram commutes </p>
+<div class="displaymath" id="a0000000061">
+  \[  \begin{tikzcd} \end{tikzcd} R \arrow {r}{} \arrow {d}[swap]{} &  A \arrow {d}{} \\ T^{-1}R \arrow {r}{} &  S^{-1}A \end{tikzcd}  \]
+</div>
+<p>We have a (canonical) isomorphism </p>
+<div class="displaymath" id="a0000000062">
+  \[  S^{-1}\Omega _{A / R} \cong \Omega _{S^{-1}A / T^{-1}R}  \]
+</div>
+
+  </div>
+</div> </p>
+<p><div class="proof_wrapper" id="a0000000063">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> TODO <div class="proof_wrapper" id="a0000000064">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> </p>
+<p><div class="definition_thmwrapper " id="def:kahler_diff_sheaf">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">45</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> lem:kahler_diff_commutes_with_loczn Given a map of schemes \(X \to S\), we have a sheaf \(\Omega _{X / S}\) which globalizes the construction \(\Omega _{A / R}\). </p>
+
+  </div>
+</div> </p>
+<p><div class="proof_wrapper" id="a0000000065">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> Use the fact that \(\Omega _{A / R}\) commutes with localization plus general scheme machinery: if we have a sheaf on an affine cover that is compatible on the intersections, then we get a sheaf on the whole scheme. <div class="proof_wrapper" id="a0000000066">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> </p>
+<p><div class="lemma_thmwrapper " id="lem:kahler_diff_sheaf_quasi_coh">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">46</span>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> def:kahler_diff_sheaf \(\Omega _{X / S}\) is quasi-coherent </p>
+
+  </div>
+</div> </p>
+<p><div class="proof_wrapper" id="a0000000067">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> Use the fact that it is defined locally as a module. This is mathematically trivial but is a good stress test of “quasicoherent sheaf machinery” in Lean. <div class="proof_wrapper" id="a0000000068">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div> </p>
+<ul class="itemize">
+  <li><p>affine conormal exact sequence (algebraic computation using the definition) </p>
+</li>
+  <li><p>define the sheaf of kahler differentials (globalizing the previous) </p>
+</li>
+  <li><p>sheafy conormal exact sequence (globalizing the previous) </p>
+</li>
+</ul>
+<p>We will need ideal sheaves for this. </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0010.html" title="Misc Commutative Algebra"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="sect0007.html" title="Adjunction Formula"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0012.html" title="Coherent Sheaves and Stalks"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>
