@@ -59,7 +59,7 @@
   <a href="sect0008.html"><span class="toc_ref">2.1</span> <span class="toc_entry">Nakayama’s Lemma and Corollaries</span></a>
  </li>
 <li class="">
-  <a href="sect0009.html"><span class="toc_ref">2.2</span> <span class="toc_entry">Regular Varieties</span></a>
+  <a href="sect0009.html"><span class="toc_ref">2.2</span> <span class="toc_entry">Regular Rings</span></a>
  </li>
 <li class="">
   <a href="sect0010.html"><span class="toc_ref">2.3</span> <span class="toc_entry">Misc Commutative Algebra</span></a>
@@ -93,46 +93,15 @@
 
 <div class="main-text">
 <h2 id="a0000000015">2.7 Left-exactness of conormal bundle</h2>
-<p> m <div class="theorem_thmwrapper" id="thm:regular_implies_kahler_diff_free">
-  <div class="theorem_thmheading">
-    <span class="theorem_thmcaption">
-    Theorem
-    </span>
-    <span class="theorem_thmlabel">2.7.1</span>
-    <div class="thm_icons">
-    <a class="icon proof" href="sect0014.html#thm:regular_implies_kahler_diff_free">#</a>
-    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
-</button>
-    <div class="modal-container">
-      <div class="modal-content">
-        <header>
-          <h1>Uses</h1>
-          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
-</button>
-        </header>
-                <ul class="uses">
-          <li><a href="sect0011.html#lem:kahler_diff_sheaf_quasi_coh">Lemma 2.4.9</a></li>
-        </ul>
-
-      </div>
-    </div>
-
-  </div>
-  </div>
-  <div class="theorem_thmcontent">
-  <p>  Let \(X\) be a regular variety over a field \(k\). Then \(\Omega _{X/k}\) is a locally free sheaf of rank \(\dim X\). </p>
-
-  </div>
-</div> </p>
 <p><div class="lemma_thmwrapper" id="lem:reg_subvar_conormal_locally_free">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">2.7.2</span>
+    <span class="lemma_thmlabel">2.7.1</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0014.html#lem:reg_subvar_conormal_locally_free">#</a>
-    <a class="icon proof" href="sect0014.html#a0000000054"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0014.html#a0000000063"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
 
   </div>
@@ -142,7 +111,7 @@
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000054">
+<div class="proof_wrapper" id="a0000000063">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -152,9 +121,9 @@
   <div class="proof_content">
   
 <p>Let \(U = \operatorname {Spec}R\) be an affine open neighborhood of \(y\) in \(X\). </p>
-<p>4. \(U \cap Y\) is also affine and irreducible (\(Y\) is irred) By Lemmas <a href="sect0013.html#lem:irred_cap_closed_is_irred_top_space">2.6.2</a> </p>
+<p>4. \(U \cap Y\) is also affine and irreducible (\(Y\) is irred) By Lemmas <a href="sect0013.html#lem:irred_cap_open_is_irred_top_space">2.6.2</a> </p>
 <p>5. As \(U \cap Y\) is irreducibe, it corresponds to a prime ideal \(\mathfrak {p}\). By Lemma <a href="sect0013.html#prop:scheme_definullstellensatz">2.6.5</a>. </p>
-<p>6. We work in the local ring of \(X\) at \(\mathfrak {p}\), which is \(R_{\mathfrak {p}}\). Let \(\mathfrak {m}\) be the maximal ideal \(\mathfrak {p} R_{\mathfrak {p}}\). Then \(\mathfrak {m} / \mathfrak {m}^2\) is a free \(R_{\mathfrak {p}} / \mathfrak {m}\) module of rank \(\dim R_{\mathfrak {p}} = \text{ht} P = n-s\), where \(n = \dim X\). By <a href="sect0009.html#lem:regular_localizes">2.2.3</a> and <a href="sect0009.html#prop:regular_def_equiv">2.2.1</a> </p>
+<p>6. We work in the local ring of \(X\) at \(\mathfrak {p}\), which is \(R_{\mathfrak {p}}\). Let \(\mathfrak {m}\) be the maximal ideal \(\mathfrak {p} R_{\mathfrak {p}}\). Then \(\mathfrak {m} / \mathfrak {m}^2\) is a free \(R_{\mathfrak {p}} / \mathfrak {m}\) module of rank \(\dim R_{\mathfrak {p}} = \text{ht} P = n-s\), where \(n = \dim X\). By <a href="sect0009.html#thm:regular_rings_localize">2.2.2</a> and <a href="sect0009.html#prop:regular_def_equiv">2.2.1</a> </p>
 <p>7. Thus, by Hartshorne II.5.7 (<a href="sect0012.html#cor:fintype_stalk_free_implies_locally_free">2.5.7</a>) we have some \(f\) not in \(\mathfrak {p}\) such that \((\mathfrak {p} / \mathfrak {p}^2)_f\) is free of rank \(r\). </p>
 
   </div>
@@ -164,10 +133,10 @@
     <span class="theorem_thmcaption">
     Theorem
     </span>
-    <span class="theorem_thmlabel">2.7.3</span>
+    <span class="theorem_thmlabel">2.7.2</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0014.html#thm:regular_implies_conormal_exact">#</a>
-    <a class="icon proof" href="sect0014.html#a0000000055"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0014.html#a0000000064"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
 
   </div>
@@ -177,7 +146,7 @@
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000055">
+<div class="proof_wrapper" id="a0000000064">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -186,14 +155,14 @@
   </div>
   <div class="proof_content">
   
-<p>1. \(Y\) is regular, therefore \(\Omega _{Y/k}\) is free of rank \(s = \dim Y\). Likewise, \(X\) is regular and \(\Omega _{X/k}\) is free of rank \(n = \dim X\). By Theorem <a href="sect0014.html#thm:regular_implies_kahler_diff_free">2.7.1</a> </p>
+<p>1. \(Y\) is regular, therefore \(\Omega _{Y/k}\) is free of rank \(s = \dim Y\). Likewise, \(X\) is regular and \(\Omega _{X/k}\) is free of rank \(n = \dim X\). By Theorem <a href="sect0011.html#thm:regular_implies_kahler_diff_free">2.4.21</a> </p>
 <p>2. We have the conormal exact sequence </p>
 <p>3. Take the stalk of this sequence at an arbitrary closed point \(y \in Y\). By Theorem ?? </p>
 <p>3a. The stalk-taking/localization pulls into the \(\mathcal{I} / \mathcal{I}^2\). By Corollary <a href="sect0012.html#cor:stalk_preserves_quotients">2.5.4</a> </p>
 <p>3b. The stalk-taking/localization pulls into the restriction/tensor product in the middle of the sequence By Lemma <a href="sect0012.html#lem:stalks_preserve_colimits">2.5.2</a> (tensor is a colimit, in fact a pushout). </p>
 <p>Steps 4-7: Apply the previous lemma to conclude that \(\mathscr {I} / \mathscr {I}^{2}\) is locally free. </p>
 <p>Now, we have the conormal exact sequence localized at \(y\): </p>
-<div class="displaymath" id="a0000000056">
+<div class="displaymath" id="a0000000065">
   \[  \mathcal{I}_y / \mathcal{I}^2_y \to \Omega _{X/k,y} \otimes _{\mathcal{O}_{X,y}} \mathcal{O}_{Y,y} \to \Omega _{Y/k,y} \to 0  \]
 </div>
 <p>8. The module in the middle of the (localized) exact sequence is free as it is the localization of a free module. </p>
@@ -201,7 +170,7 @@
 <p>8b. Then, we use the fact that localization pulls in/out of the construction (3b). </p>
 <p>Let \(u\) be the surjective map in the (localized) conormal exact sequence. </p>
 <p>9. Then \(\operatorname {Ker}u\) is a projective module over \(R_{\mathfrak {p}}\), as the exact sequence </p>
-<div class="displaymath" id="a0000000057">
+<div class="displaymath" id="a0000000066">
   \[  0 \to \operatorname {Ker}u \to \Omega _{X/k,y} \otimes _{\mathcal{O}_{X,y}} \mathcal{O}_{Y,y} \to \Omega _{Y/k,y} \to 0  \]
 </div>
 <p> splits (both of the second components are free). By <a href="sect0010.html#lem:finite_free_surj_splits">2.3.1</a> </p>
