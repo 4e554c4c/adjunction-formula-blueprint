@@ -17,6 +17,7 @@
 <link rel="prev" href="sect0008.html" title="Nakayama’s Lemma and Corollaries" />
 <link rel="up" href="sect0007.html" title="Adjunction Formula" />
 <link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
 </head>
 
 <body>
@@ -29,58 +30,60 @@
 <nav class="toc">
 <ul class="sub-toc-0">
 <li class="">
-  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Commutative Algebra Preliminaries</span></a>
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Commutative Algebra Preliminaries</span></a>
   <span class="expand-toc">▶</span>
   <ul class="sub-toc-1">
      <li class="">
-  <a href="sect0002.html"><span class="toc_ref"></span> <span class="toc_entry">Projective Resolutions</span></a>
+  <a href="sect0002.html"><span class="toc_ref">1.1</span> <span class="toc_entry">Projective Resolutions</span></a>
  </li>
 <li class="">
-  <a href="sect0003.html"><span class="toc_ref"></span> <span class="toc_entry">Regular elements and sequences</span></a>
+  <a href="sect0003.html"><span class="toc_ref">1.2</span> <span class="toc_entry">Regular elements and sequences</span></a>
  </li>
 <li class="">
-  <a href="sect0004.html"><span class="toc_ref"></span> <span class="toc_entry">Associated Primes</span></a>
+  <a href="sect0004.html"><span class="toc_ref">1.3</span> <span class="toc_entry">Associated Primes</span></a>
  </li>
 <li class="">
-  <a href="sect0005.html"><span class="toc_ref"></span> <span class="toc_entry">Auslander-Buchsbaum Formula</span></a>
+  <a href="sect0005.html"><span class="toc_ref">1.4</span> <span class="toc_entry">Auslander-Buchsbaum Formula</span></a>
  </li>
 <li class="">
-  <a href="sect0006.html"><span class="toc_ref"></span> <span class="toc_entry">Proof of Auslander-Buchbaum-Serre</span></a>
+  <a href="sect0006.html"><span class="toc_ref">1.5</span> <span class="toc_entry">Proof of Auslander-Buchbaum-Serre</span></a>
  </li>
 
   </ul>
  </li>
 <li class=" active">
-  <a href="sect0007.html"><span class="toc_ref"></span> <span class="toc_entry">Adjunction Formula</span></a>
+  <a href="sect0007.html"><span class="toc_ref">2</span> <span class="toc_entry">Adjunction Formula</span></a>
   <span class="expand-toc">▼</span>
   <ul class="sub-toc-1 active">
      <li class="">
-  <a href="sect0008.html"><span class="toc_ref"></span> <span class="toc_entry">Nakayama’s Lemma and Corollaries</span></a>
+  <a href="sect0008.html"><span class="toc_ref">2.1</span> <span class="toc_entry">Nakayama’s Lemma and Corollaries</span></a>
  </li>
 <li class=" active current">
-  <a href="sect0009.html"><span class="toc_ref"></span> <span class="toc_entry">Regular Varieties</span></a>
+  <a href="sect0009.html"><span class="toc_ref">2.2</span> <span class="toc_entry">Regular Varieties</span></a>
  </li>
 <li class="">
-  <a href="sect0010.html"><span class="toc_ref"></span> <span class="toc_entry">Misc Commutative Algebra</span></a>
+  <a href="sect0010.html"><span class="toc_ref">2.3</span> <span class="toc_entry">Misc Commutative Algebra</span></a>
  </li>
 <li class="">
-  <a href="sect0011.html"><span class="toc_ref"></span> <span class="toc_entry">Kahler differentials</span></a>
+  <a href="sect0011.html"><span class="toc_ref">2.4</span> <span class="toc_entry">Kahler differentials</span></a>
  </li>
 <li class="">
-  <a href="sect0012.html"><span class="toc_ref"></span> <span class="toc_entry">Coherent Sheaves and Stalks</span></a>
+  <a href="sect0012.html"><span class="toc_ref">2.5</span> <span class="toc_entry">Coherent Sheaves and Stalks</span></a>
  </li>
 <li class="">
-  <a href="sect0013.html"><span class="toc_ref"></span> <span class="toc_entry">Irreducible Schemes</span></a>
+  <a href="sect0013.html"><span class="toc_ref">2.6</span> <span class="toc_entry">Irreducible Schemes</span></a>
  </li>
 <li class="">
-  <a href="sect0014.html"><span class="toc_ref"></span> <span class="toc_entry">Left-exactness of conormal bundle</span></a>
+  <a href="sect0014.html"><span class="toc_ref">2.7</span> <span class="toc_entry">Left-exactness of conormal bundle</span></a>
  </li>
 <li class="">
-  <a href="sect0015.html"><span class="toc_ref"></span> <span class="toc_entry">Main Proof</span></a>
+  <a href="sect0015.html"><span class="toc_ref">2.8</span> <span class="toc_entry">Main Proof</span></a>
  </li>
 
   </ul>
  </li>
+<li ><a href="dep_graph_section_1.html">Section 1 graph</a></li>
+<li ><a href="dep_graph_section_2.html">Section 2 graph</a></li>
 </ul>
 </nav>
 
@@ -89,17 +92,38 @@
 
 
 <div class="main-text">
-<h2 id="a0000000010"> Regular Varieties</h2>
+<h2 id="a0000000010">2.2 Regular Varieties</h2>
 <p>There are two (very closely related) notions of “smoothness” given in Vakil Chatper 12. The one we need for this proof is “regularity”. </p>
-<p><div class="proposition_thmwrapper " id="prop:regular_def_equiv">
+<p><div class="proposition_thmwrapper" id="prop:regular_def_equiv">
   <div class="proposition_thmheading">
     <span class="proposition_thmcaption">
     Proposition
     </span>
-    <span class="proposition_thmlabel">32</span>
+    <span class="proposition_thmlabel">2.2.1</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0009.html#prop:regular_def_equiv">#</a>
+    <a class="icon proof" href="sect0009.html#a0000000034"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0008.html#cor:local_maximal_gereating_set_basis_residue">Corollary 2.1.2</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
   </div>
   <div class="proposition_thmcontent">
-  <p> cor:local_maximal_gereating_set_basis_residue Let \((R,\mathfrak {m},k)\) be a noetherian ring. The following are equivalent: </p>
+  <p>  Let \((R,\mathfrak {m},k)\) be a noetherian ring. The following are equivalent: </p>
 <ol class="enumerate">
   <li><p>Let \(n\) be the minimal number of generators of \(\mathfrak {m}\). Then \(n = \dim R\). </p>
 </li>
@@ -109,36 +133,31 @@
 
   </div>
 </div> </p>
-<p><div class="proof_wrapper" id="a0000000050">
+<div class="proof_wrapper" id="a0000000034">
   <div class="proof_heading">
     <span class="proof_caption">
-    
+    Proof
     </span>
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  
-  </div>
-</div> It is enough to show that \(\mu (\mathfrak {m}) = \dim \mathfrak {m} / \mathfrak {m}^{2}\), where \(\mu (\mathfrak {m})\) is the minimal number of generators of \(\mathfrak {m}\). </p>
+  <p>It is enough to show that \(\mu (\mathfrak {m}) = \dim \mathfrak {m} / \mathfrak {m}^{2}\), where \(\mu (\mathfrak {m})\) is the minimal number of generators of \(\mathfrak {m}\). </p>
 <p>First, we show \(\mu (\mathfrak {m}) \leq \dim \mathfrak {m} / \mathfrak {m}^{2}\). Let \(\overline{x}_{1}, \ldots , \overline{x}_{n}\) be a basis of \(\mathfrak {m} / \mathfrak {m}^{2}\) over \(k\). Then, by a corollary of Nakayama’s lemma (Atiyah-MacDonald 2.8), the lifts of the \(\overline{x}_{i}\) generate \(\mathfrak {m}\), so \(\mu (\mathfrak {m}) \leq n\) as desired. </p>
-<p>Second, we show that \(\dim \mathfrak {m} / \mathfrak {m}^{2} \leq \mu (\mathfrak {m})\). Let \(x_{1}, \ldots , x_{n}\) be a generating set of \(\mathfrak {m}\). Then, the residues of the \(x_{i}\) generate \(\mathfrak {m} / \mathfrak {m}^{2}\) (quotient map is a homomorphism or something). Since it is a generating set, it contains a basis by linear algebra, and \(\dim \mathfrak {m} / \mathfrak {m}^{2} \leq n\) as desired. <div class="proof_wrapper" id="a0000000051">
-  <div class="proof_heading">
-    <span class="proof_caption">
-    
-    </span>
-    <span class="expand-proof">▼</span>
+<p>Second, we show that \(\dim \mathfrak {m} / \mathfrak {m}^{2} \leq \mu (\mathfrak {m})\). Let \(x_{1}, \ldots , x_{n}\) be a generating set of \(\mathfrak {m}\). Then, the residues of the \(x_{i}\) generate \(\mathfrak {m} / \mathfrak {m}^{2}\) (quotient map is a homomorphism or something). Since it is a generating set, it contains a basis by linear algebra, and \(\dim \mathfrak {m} / \mathfrak {m}^{2} \leq n\) as desired. </p>
+
   </div>
-  <div class="proof_content">
-  
-  </div>
-</div> </p>
+</div>
 <p>The part that is needed in user6’s proof is (b) in the proposition. I believe this is also what is used in Hartshorne II.8.17 </p>
-<p><div class="definition_thmwrapper " id="def:regular">
+<p><div class="definition_thmwrapper" id="def:regular">
   <div class="definition_thmheading">
     <span class="definition_thmcaption">
     Definition
     </span>
-    <span class="definition_thmlabel">33</span>
+    <span class="definition_thmlabel">2.2.2</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0009.html#def:regular">#</a>
+
+  </div>
   </div>
   <div class="definition_thmcontent">
   <p> Let \(R\) be a noetherian local ring. \(R\) is <i class="itshape">regular</i> if one (equivalently, all) of the conditions from the previous proposition holds. </p>
@@ -146,46 +165,57 @@
   </div>
 </div> </p>
 <p>The following lemma is used in the proof that the conormal sequence is exact on the left by both Hartshorne and user6. </p>
-<p><div class="lemma_thmwrapper " id="lem:regular_localizes">
+<p><div class="lemma_thmwrapper" id="lem:regular_localizes">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">34</span>
+    <span class="lemma_thmlabel">2.2.3</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0009.html#lem:regular_localizes">#</a>
+    <a class="icon proof" href="sect0009.html#a0000000035"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0009.html#def:regular">Definition 2.2.2</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
   </div>
   <div class="lemma_thmcontent">
-  <p> def:regular The localization of a regular local ring at (read: away from) a prime ideal is a regular local ring. </p>
+  <p>  The localization of a regular local ring at (read: away from) a prime ideal is a regular local ring. </p>
 
   </div>
 </div> </p>
-<p><div class="proof_wrapper" id="a0000000052">
+<div class="proof_wrapper" id="a0000000035">
   <div class="proof_heading">
     <span class="proof_caption">
-    
+    Proof
     </span>
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  
-  </div>
-</div> This proof uses two things </p>
+  <p>This proof uses two things </p>
 <ul class="itemize">
   <li><p>Auslander-Buchsbaum-Serre </p>
 </li>
   <li><p>The localization of a projective resolution is a projective resolution (follows from the fact that localizations are exact) </p>
 </li>
 </ul>
-<p> <div class="proof_wrapper" id="a0000000053">
-  <div class="proof_heading">
-    <span class="proof_caption">
-    
-    </span>
-    <span class="expand-proof">▼</span>
+
   </div>
-  <div class="proof_content">
-  
-  </div>
-</div> </p>
+</div>
 
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->

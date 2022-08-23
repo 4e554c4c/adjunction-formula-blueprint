@@ -17,6 +17,7 @@
 <link rel="prev" href="sect0004.html" title="Associated Primes" />
 <link rel="up" href="sect0001.html" title="Commutative Algebra Preliminaries" />
 <link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
 </head>
 
 <body>
@@ -29,58 +30,60 @@
 <nav class="toc">
 <ul class="sub-toc-0">
 <li class=" active">
-  <a href="sect0001.html"><span class="toc_ref"></span> <span class="toc_entry">Commutative Algebra Preliminaries</span></a>
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Commutative Algebra Preliminaries</span></a>
   <span class="expand-toc">▼</span>
   <ul class="sub-toc-1 active">
      <li class="">
-  <a href="sect0002.html"><span class="toc_ref"></span> <span class="toc_entry">Projective Resolutions</span></a>
+  <a href="sect0002.html"><span class="toc_ref">1.1</span> <span class="toc_entry">Projective Resolutions</span></a>
  </li>
 <li class="">
-  <a href="sect0003.html"><span class="toc_ref"></span> <span class="toc_entry">Regular elements and sequences</span></a>
+  <a href="sect0003.html"><span class="toc_ref">1.2</span> <span class="toc_entry">Regular elements and sequences</span></a>
  </li>
 <li class="">
-  <a href="sect0004.html"><span class="toc_ref"></span> <span class="toc_entry">Associated Primes</span></a>
+  <a href="sect0004.html"><span class="toc_ref">1.3</span> <span class="toc_entry">Associated Primes</span></a>
  </li>
 <li class=" active current">
-  <a href="sect0005.html"><span class="toc_ref"></span> <span class="toc_entry">Auslander-Buchsbaum Formula</span></a>
+  <a href="sect0005.html"><span class="toc_ref">1.4</span> <span class="toc_entry">Auslander-Buchsbaum Formula</span></a>
  </li>
 <li class="">
-  <a href="sect0006.html"><span class="toc_ref"></span> <span class="toc_entry">Proof of Auslander-Buchbaum-Serre</span></a>
+  <a href="sect0006.html"><span class="toc_ref">1.5</span> <span class="toc_entry">Proof of Auslander-Buchbaum-Serre</span></a>
  </li>
 
   </ul>
  </li>
 <li class="">
-  <a href="sect0007.html"><span class="toc_ref"></span> <span class="toc_entry">Adjunction Formula</span></a>
+  <a href="sect0007.html"><span class="toc_ref">2</span> <span class="toc_entry">Adjunction Formula</span></a>
   <span class="expand-toc">▶</span>
   <ul class="sub-toc-1">
      <li class="">
-  <a href="sect0008.html"><span class="toc_ref"></span> <span class="toc_entry">Nakayama’s Lemma and Corollaries</span></a>
+  <a href="sect0008.html"><span class="toc_ref">2.1</span> <span class="toc_entry">Nakayama’s Lemma and Corollaries</span></a>
  </li>
 <li class="">
-  <a href="sect0009.html"><span class="toc_ref"></span> <span class="toc_entry">Regular Varieties</span></a>
+  <a href="sect0009.html"><span class="toc_ref">2.2</span> <span class="toc_entry">Regular Varieties</span></a>
  </li>
 <li class="">
-  <a href="sect0010.html"><span class="toc_ref"></span> <span class="toc_entry">Misc Commutative Algebra</span></a>
+  <a href="sect0010.html"><span class="toc_ref">2.3</span> <span class="toc_entry">Misc Commutative Algebra</span></a>
  </li>
 <li class="">
-  <a href="sect0011.html"><span class="toc_ref"></span> <span class="toc_entry">Kahler differentials</span></a>
+  <a href="sect0011.html"><span class="toc_ref">2.4</span> <span class="toc_entry">Kahler differentials</span></a>
  </li>
 <li class="">
-  <a href="sect0012.html"><span class="toc_ref"></span> <span class="toc_entry">Coherent Sheaves and Stalks</span></a>
+  <a href="sect0012.html"><span class="toc_ref">2.5</span> <span class="toc_entry">Coherent Sheaves and Stalks</span></a>
  </li>
 <li class="">
-  <a href="sect0013.html"><span class="toc_ref"></span> <span class="toc_entry">Irreducible Schemes</span></a>
+  <a href="sect0013.html"><span class="toc_ref">2.6</span> <span class="toc_entry">Irreducible Schemes</span></a>
  </li>
 <li class="">
-  <a href="sect0014.html"><span class="toc_ref"></span> <span class="toc_entry">Left-exactness of conormal bundle</span></a>
+  <a href="sect0014.html"><span class="toc_ref">2.7</span> <span class="toc_entry">Left-exactness of conormal bundle</span></a>
  </li>
 <li class="">
-  <a href="sect0015.html"><span class="toc_ref"></span> <span class="toc_entry">Main Proof</span></a>
+  <a href="sect0015.html"><span class="toc_ref">2.8</span> <span class="toc_entry">Main Proof</span></a>
  </li>
 
   </ul>
  </li>
+<li ><a href="dep_graph_section_1.html">Section 1 graph</a></li>
+<li ><a href="dep_graph_section_2.html">Section 2 graph</a></li>
 </ul>
 </nav>
 
@@ -89,45 +92,42 @@
 
 
 <div class="main-text">
-<h2 id="a0000000006"> Auslander-Buchsbaum Formula</h2>
-<p><div class="lemma_thmwrapper " id="lem:module_assoc_maximal_tensor_free_summand">
+<h2 id="a0000000006">1.4 Auslander-Buchsbaum Formula</h2>
+<p><div class="lemma_thmwrapper" id="lem:module_assoc_maximal_tensor_free_summand">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
-    <span class="lemma_thmlabel">23</span>
+    <span class="lemma_thmlabel">1.4.1</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0005.html#lem:module_assoc_maximal_tensor_free_summand">#</a>
+    <a class="icon proof" href="sect0005.html#a0000000025"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+
+  </div>
   </div>
   <div class="lemma_thmcontent">
   <p> BH 1.3.4 </p>
 
   </div>
 </div> </p>
-<p><div class="proof_wrapper" id="a0000000032">
+<div class="proof_wrapper" id="a0000000025">
   <div class="proof_heading">
     <span class="proof_caption">
-    
+    Proof
     </span>
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  
-  </div>
-</div> prop:assoc_primes_def_equiv Uses </p>
+  <p> Uses </p>
 <p>* def of associated primes </p>
 <p>* a fact about associated primes giving and embedding </p>
 <p>* some facts about commutative squares (maybe already in lean?) </p>
 <p>* tensor products of modules </p>
-<p>* Nakayama (a corollary, like Atiyah-MacDonald 2.8 but uses maps, might just follow from AM 2.8) <div class="proof_wrapper" id="a0000000033">
-  <div class="proof_heading">
-    <span class="proof_caption">
-    
-    </span>
-    <span class="expand-proof">▼</span>
+<p>* Nakayama (a corollary, like Atiyah-MacDonald 2.8 but uses maps, might just follow from AM 2.8) </p>
+
   </div>
-  <div class="proof_content">
-  
-  </div>
-</div> </p>
+</div>
 
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->
